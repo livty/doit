@@ -1,0 +1,33 @@
+<% include ./partials/header %>
+ <div class="ui huge header"style="margin-left:41%">Escape your routine</div>
+     <div class="ui main text container">
+    
+        <div class="ui items">
+            <% chores.forEach(function(chore){ %>
+        
+         <div class="item">
+         <div class="ui small image">
+         <img src="<%= chore.image %>">
+       
+         <span><%= chore.created.toDateString() %></span>
+         </div>
+ 
+         
+         
+         
+         <div class="content">
+            
+             <a class="header" href="/work/<%=chore._id%>"><%=chore.title%></a>
+                
+                 <%=chore.body%>
+             
+         </div>
+        
+     </div>
+
+<% }); %>
+        </div>
+    </div>
+</div>
+     
+    <% include ./partials/footer %>

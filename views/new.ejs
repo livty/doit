@@ -1,0 +1,37 @@
+<% include ./partials/header %>
+
+<div class="ui main text container pink segment">
+    <div class="ui huge header">New Post</div>
+    <form class="ui form" action="/chores" method="POST">
+        <div class="field">
+            <label>Choose a day of the week</label>
+            <select name="chore[day]"class="ui search dropdown">
+              <option value=""></option>
+              <option value="AF">Saturday</option>
+              <option value="Su">Sunday</option>
+              <option value="Mo">Monday</option>
+              <option value="Tu">Tuesday</option>
+              <option value="We">Wednesday</option>
+              <option value="Th">Thursday</option>
+              <option value="Fr">Friday</option>
+       </select>
+        </div>
+        <div class="field">
+            <label>Image</label>
+            <input type="text" name="chore[image]" placeholder="image url (optional)">
+        </div>
+        <div class="field">
+            <label>Title</label>
+            <input type="text" name="chore[title]" placeholder="Short name for your idea">
+        </div>
+        <div class="field">
+            <label>What would you do instead of a routine day task? (150 characters) </label>
+            <textarea maxlength="150" name="chore[body]"></textarea>
+        </div>
+        
+        <button class="ui pink basic button" type="submit">Submit</button>
+    </form>
+</div>
+
+
+<% include ./partials/footer %>

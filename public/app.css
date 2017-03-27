@@ -1,0 +1,23 @@
+/*.container.main{
+    margin-top: 7em;
+}*/
+#days {
+    margin-top:7em;
+    margin-left:18em;
+    margin-right:18em;
+}
+i.icon {
+    font-size:2em;
+}
+.item{
+    margin-left:5em;
+    padding:10px 10px 10px 10px;
+}
+#drop{
+    width:20%;
+    height:30%;
+}
+.make{
+    padding-left: 3%;
+    margin-right: 3%;
+}
